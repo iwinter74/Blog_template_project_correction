@@ -1,0 +1,15 @@
+<%-include('./partials/headNav')%>
+
+<section id="all-articles">
+    <% data.forEach(elt => { %>
+    <article <%= elt.id %>>
+        <a href="/blog/<%= elt.id %>""><img src="<%= elt.url %>" alt=""></img></a>
+        <h3><a href="/blog/<%= elt.id %>"><%= elt.title %></a></h3>
+    </article>
+    <% }) %>
+</section>
+
+<%-include('./partials/footer')%>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<%-include('./partials/headNav')%>
+
+<section id="blog-item-section">
+    <h1> <%=blogItem.title%> </h1>
+    <img src="<%= blogItem.url %>" alt=""></img>
+    <div class="infos">
+        <img class="author-img" src="<%= blogItem.authorPicture %>" alt="">
+        <div>
+            <h5> <%=blogItem.author%> </h5>
+            <h6><%=blogItem.published_at%></h6>
+            <h6><%=blogItem.duration%> Min read </h6>
+        </div>
+    </div>
+    <p><%=blogItem.body%></p>
+</section>
+
+<%-include('./partials/readNext')%>
+<%-include('./partials/footer')%>
+
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<%-include('./partials/headNav')%>
+
+<section id="upload-section">
+    <h2>ADD NEW ARTICLE</h2>
+    <form action="/blogs/upload" enctype="multipart/form-data" method="POST">
+        <div><input type="text" name="title" id="" placeholder="Title" /></div>
+        <div><input type="text" name="author" id="" placeholder="Author Name"></div>
+        <div><input type="file" name="authorPicture" id="" placeholder="Author Picture"></div>
+        <div><input type="file" name="url" id="" placeholder="Url picture"></div>
+        <div><textarea name="body" id="" cols="30" rows="10" placeholder="Write your article here"></textarea></div>
+        <input class="btn" type="submit" value="Upload" />
+    </form>
+</section>
+
+<%-include('./partials/readNext')%>
+
+<%-include('./partials/footer')%>
+</body>
+
+</html>

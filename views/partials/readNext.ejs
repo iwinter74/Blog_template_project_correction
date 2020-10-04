@@ -1,0 +1,12 @@
+<section id="next">
+    <div class="line"></div>
+    <h4>What to read next</h4>
+    <div class="grid-wrap">
+        <% newArr.forEach(elt => { %>
+        <article <%= elt.id %>>
+            <a href="/blog/<%= data[elt].id %>"><img src="<%= data[elt].url %>" alt=""></img></a>
+            <h3><a href="/blog/<%= data[elt].title %>"><%= data[elt].title %></a></h3>
+        </article>
+        <% }) %>
+    </div>
+</section>

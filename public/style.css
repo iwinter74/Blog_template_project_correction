@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #000000;
+  padding: 3vh 3%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li a {
+  padding: 0 3em;
+  color: #000000;
+  transition: all 0.5s;
+}
+nav ul li a:hover{
+  color: #8e8e8e;
+}
+.active {
+  border-bottom: 1px solid #000000;
+}
+.line {
+  border-bottom: 1px solid #b3b3b3;
+}
+#all-articles {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+  width: 60%;
+  margin: 10vh auto;
+}
+#all-articles img {
+  width: 100%;
+}
+#all-articles h2 {
+  font-size: 3em;
+}
+#all-articles article:first-of-type {
+  grid-column: 1/3;
+  font-family: "Poppins", sans-serif;
+}
+#all-articles article:first-of-type::after {
+  content: "All articles";
+  font-size: 2em;
+  width: 70%;
+  border-top: 2px solid #000000;
+}
+#all-articles a {
+  color: #000000;
+}
+#all-articles article h3 {
+  width: 90%;
+  margin: 0 auto;
+  font-family: "Fira Code", monospace;
+  font-weight: 400;
+}
+#all-articles article:first-of-type h3 {
+  width: 100%;
+  font-size: 3em;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  padding: 1vh 0 15vh 0;
+  color: #000000;
+}
+footer {
+  background: #000000;
+  color: #ffff;
+  font-family: Fira Code;
+  font-weight: 400;
+  text-align: center;
+  padding: 1em;
+}
+footer ul {
+  list-style-type: none;
+}
+.words {
+  display: flex;
+  justify-content: space-between;
+}
+.words li {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-style: bold;
+}
+.words li:nth-of-type(even) {
+  color: rgb(164, 164, 164);
+}
+footer article p {
+  width: 50%;
+  font-size: 1em;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  padding: 3vh 0;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  padding: 3vh 0 6vh 0;
+}
+.social a {
+  padding: 0 1em;
+  text-decoration: none;
+  color: white;
+}
+footer article h5 {
+  font-weight: 100;
+}
+
+#new-article {
+  text-align: center;
+  padding: 2em;
+  padding: 5vh 5%;
+}
+#new-article h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  padding: 3vh 0;
+}
+#new-article form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5em;
+}
+#new-article input,
+#new-article textarea {
+  background: rgba(51, 51, 51, 0.2);
+  color: rgba(51, 51, 51, 0.5);
+  border: none;
+  padding: 1em;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+#new-article .btn {
+  background: #000000;
+  color: #ffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.5s;
+}
+#new-article .btn:hover {
+  color: #000000;
+  background: #ffff;
+  border: 1px solid #000000;
+}
+
+#next {
+  text-align: center;
+  padding: 10vh 0;
+}
+#next h4 {
+  font-size: 2.5em;
+  font-family: "Poppins", sans-serif;
+  padding: 5vh 0;
+  /* border-top: 1px solid #000000; */
+}
+#next .grid-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  margin: 0 15%;
+}
+#next .grid-wrap h3 {
+  width: 90%;
+  margin: 0 auto;
+  font-family: "Fira Code", monospace;
+  font-weight: 400;
+}
+#next .grid-wrap h3 a {
+  color: #000000;
+}
+#next img {
+  width: 100%;
+  height: 25vh;
+}
+
+#blog-item-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 3vh;
+}
+#blog-item-section img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+}
+#blog-item-section h1 {
+  font-size: 3.5em;
+  font-family: "Poppins", sans-serif;
+  padding: 3vh 0;
+  text-align: center;
+  width: 70%;
+}
+#blog-item-section .infos {
+  font-family: "Fira Code", monospace;
+  display: flex;
+  align-items: center;
+  padding: 5vh 0 2vh 0;
+  width: 45%;
+}
+#blog-item-section .author-img {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  margin: 1em;
+}
+#blog-item-section p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  width: 45%;
+  padding-bottom: 5vh;
+}
+#not-found {
+  display: flex;
+  justify-content: center;
+  padding: 2vh 0;
+}
+#not-found img {
+  height: 45vh;
+}
+
+#upload-section {
+  text-align: center;
+  padding: 2em;
+  padding: 5vh 5%;
+}
+#upload-section h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  padding: 3vh 0;
+}
+#upload-section form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5em;
+}
+#upload-section input, textarea {
+  background: rgba(51, 51, 51, 0.2);
+  color: rgba(51, 51, 51, 0.5);
+  border: none;
+  padding: 1em;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  width: 100%;
+}
+#upload-section .btn {
+  background: #000000;
+  color: #ffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.5s;
+}
+#upload-section .btn:hover {
+  color: #000000;
+  background: #ffff;
+  border: 1px solid #000000;
+}
